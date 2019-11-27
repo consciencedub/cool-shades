@@ -281,15 +281,13 @@ a:link {
 }
 
 .features-list {
-  font-size: 2rem;
-  padding: 5rem 0rem 30rem 8rem;
-  position: absolute;
-  z-index: 6;
+  font-size: 1.7vw;
 }
 
 .big-glasses-div {
   position: relative;
   background-color: #F8F9FA;
+  background-image: url("./design-assets/features-background.jpg");
 
 }
 

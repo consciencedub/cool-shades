@@ -1,0 +1,56 @@
+/*Jumbotron styles*/
+
+.jumbotron {
+    background-image: url(./design-assets/hero.jpg);
+    background-size: cover;
+    height: 600px;
+  }
+
+
+.navbar {
+  background-color: transparent;
+}
+
+.logos-lockup {
+  position: relative;
+}
+
+.logo--rock--n--stroll {
+  background-image: url(./design-assets/logo--rock--n--stroll.png);
+  background-color: sandybrown;
+  height: 50px;
+
+}
+
+.hero-logos {
+  height: 50px;
+  width: fit-content;
+  position: relative;
+  background-color: none; 
+}
+
+.rock-n-stroll-hero {
+  position: absolute;
+}
+
+.peppers-hero {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;;
+}
+
+.nav-link {
+  color: red;
+}
+
+.audio-sunglasses {
+  margin-top: 100px;
+width: 350px;
+color: white;
+
+}
+
+.container {
+  margin-right: 15px;
+  margin-left: 15px;
+}

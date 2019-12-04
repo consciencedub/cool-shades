@@ -5,11 +5,13 @@
 }
 .jumbotron {
   background-image: url(./design-assets/hero.jpg);
-background-size: cover;
-}
+    background-size: cover;
+    max-width:100%;
+  }
 
 .peppers-links {
 color: white;
+align-content: flex-end;
 
 }
 
@@ -18,7 +20,6 @@ color: white;
   display: flex;
   justify-content: space-between;
   padding: 0px 0px 0px 50px;
-  height: 150px;
 }
 
 .features {
@@ -26,12 +27,10 @@ color: white;
   font-size: 20px:
 }
 
-.btn-primary { background-color: purple; }
+.btn-primary { background-color: darkblue; }
 
-.btn-primary:hover { background-color: #8B0000; }
+.btn-primary:hover { background-color: deepskyblue; }
 
-html,body {
-  height: 100%; margin: 0px; padding: 0px; }
 
 .navbar {
   background-color: transparent;

@@ -1,5 +1,14 @@
 /*Hero*/
 
+.button {
+  background-color: red;
+  color: white;
+}
+
+.card-price {
+  font-size: 20px;
+}
+
 .hero {
   background-image: url("design-assets/hero.jpg");
   background-size: cover;
@@ -26,17 +35,55 @@
   background-color: transparent;
 }
 
+/*Find Your Style*/
 
+.fys {
+  background-color: #fafafa;
+  height: 5rem;
 
+}
 
+.card-group {
+  margin-bottom: 10px;
+}
+
+.card {
+  text-align: center;
+  margin: 8px;
+  border: 0px;
+}
+
+.card-body {
+  align-content: center;
+  background-color: #fafafa;
+  b
+
+}
+
+.features {
+  background-color: #fafafa;
+  margin-left: 15px;
+}
 
 /*Features*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows:  20px 20px 45px 20px 20px 20px 20px 20px;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding-left: 24px;
+  grid-auto-rows: minmax(75px, auto);
+  grid-gap: .5rem;
+}
 
 .my-list-group {
   background-color:transparent;
   border: none;
   padding: 1px;
 }
+
 
 .bg {
   background-image: url("design-assets/features-background.jpg");
@@ -47,20 +94,43 @@
   background-position: bottom;
 }
 
-
+@media (max-width: 480px){
+  .no-bg-img .x-bg-layer-lower-image {
+  background-image: none !important; 
+  }
+  }
 
 @media only screen and (max-width: 479px) {
   .bg {
-   }
+  }
 }
 
 .compatible {
  display: inline-block;
  justify-content: center;
  align-items: center;
+ height: 500px;
 }
 
 .features {
+  font-size: 20px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: none;
+  padding-top: 50px;
+  
+}
+
+.flex-container > div {
+  background-color: none;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+  vertical-align: top;
+  line-height: auto;
   font-size: 20px;
 }
 

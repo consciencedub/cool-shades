@@ -37,7 +37,45 @@
 
 /*Find Your Style*/
 
-.fys {
+.product-price {
+font-size: 20px;
+}
+
+/* circles */
+
+
+
+.circle {
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 50px 10px 50px 10px;
+  
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.black {
+  background: black;
+}
+
+#mobile-products {
+
+
+}
+
+.desktop-products {
   background-color: #fafafa;
   height: 5rem;
 
@@ -68,14 +106,21 @@
 /*Features*/
 
 .grid {
-  display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows:  20px 20px 45px 20px 20px 20px 20px 20px;
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  padding-left: 24px;
-  grid-auto-rows: minmax(75px, auto);
-  grid-gap: .5rem;
+  display: grid; 
+  grid-template-rows: repeat(8, 1fr); 
+  grid-template-columns: .65fr 2.618fr;
+  grid-gap: 1em; 
+  height: 600px;
+}
+
+.grid-item {
+}
+
+
+.compatible {
+  display: block;
+  text-align:center;
+  margin-top: 200px;
 }
 
 .my-list-group {
@@ -86,34 +131,24 @@
 
 
 .bg {
-  background-image: url("design-assets/features-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1200px;
+  height: 1300px;
   background-position: bottom;
+  padding-left: 3rem;
+  line-height: 30px;
 }
 
-@media (max-width: 480px){
-  .no-bg-img .x-bg-layer-lower-image {
-  background-image: none !important; 
-  }
-  }
-
-@media only screen and (max-width: 479px) {
-  .bg {
-  }
+.feature-background{
+  background-image: url("design-assets/features-background.jpg");
+  width:xxpx;
+  height:xxpx;
 }
+
 
 .compatible {
- display: inline-block;
  justify-content: center;
- align-items: center;
- height: 500px;
-}
-
-.features {
-  font-size: 20px;
 }
 
 .flex-container {
@@ -178,3 +213,27 @@ a:link {
 h6 {
   color: white;
 }
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px) {
+  .feature-background { 
+    background-image: none;
+
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .card-group { 
+    display: none;
+
+  }
+}
+
+@media screen and (min-width: 479px) {
+  #mobile-products { 
+    display: none;
+
+  }
+}
+

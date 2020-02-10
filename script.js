@@ -6,37 +6,36 @@ $(document).ready(function() {
     console.log(index);
   });
 
-});
+  
+//object
 
-const shade= {
-  img:"url(design-assets/product-red.jpg)",
-  subtitle: "Rock-N-Stroll",
-  color: "Red",
-  Price: "$199",
-}
+let redShades = {
+  title: 'Red',
+  subtitle: 'Rock-N-Stroll',
+  img:"design-assets/product-red.jpg",
+  price: 199.99
+};
 
-const shade= {
+let greenShades = {
+  title: 'Green',
+  subtitle: 'Rock-N-Stroll',
   img: "design-assets/product-green.jpg",
-  subtitle: "Rock-N-Stroll",
-  color: "Red",
-  Price: "$199",
-}
-
-const shade= {
+  price: 199.99
+};
+let blueShades = {
+  title: 'Blue',
+  subtitle: 'Rock-N-Stroll',
   img:"design-assets/product-blue.jpg",
-  subtitle: "Rock-N-Stroll",
-  color: "Red",
-  Price: "$199",
-}
+  price: 199.99
+};
+let blackShades = {
+  title: 'Black',
+  subtitle: 'Rock-N-Stroll',
+  img:"url(design-assets/product-black.jpg)",
+  price: 199.99
+};
 
-const shade= {
-  img:"design-assets/product-black.jpg",
-  subtitle: "Rock-N-Stroll",
-  color: "Red",
-  Price: "$199",
-}
-
-const shades= [redshade, greenshade, blueshade, blackshade,]
+let shades= [redshade, greenshade, blueshade, blackshade,]
 
 
 function mobileProducts(product) {
